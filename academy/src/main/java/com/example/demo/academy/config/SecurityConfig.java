@@ -20,15 +20,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private ServiceEndpointsProperties serviceEndpointsProps;
 
- /*   @Autowired
-    private CustomADOAuth2UserService customADOAuth2UserService;
-
-    public SecurityConfig(OAuth2UserService<OidcUserRequest, OidcUser> oidcUserService) {
-        this.oidcUserService = oidcUserService;
-    }*/
-
-
-
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
